@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  p { background:yellow; }
+</style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+  <!--
+    A.append(B)  - A요소의 내용의 뒤에 B 추가 /- B가 문서에 없으면 추가 / - 있으면 이동
+    A.appendTo(B) - B요소의 내용의 뒤에 A를 추가(이동)
+
+    A.prepend(B) - A를 B에게 추가 B의 내용의 앞에 추가
+    A.prependTo(B) - B를 A에게 추가 A의 내용의 앞에 추가
+
+    내용복사  -> clone()
+    $('b').clone().prependTo(p); p태그 앞에 복사
+  -->
+  <p>I would like to say: </p>
+<script>
+  $('p').append('<strong>Hello</strong>');
+</script>
+ 
+</body>
+</html>
+
+

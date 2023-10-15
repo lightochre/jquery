@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>#foo { background:yellow; }</style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+  <!--
+    A.append(B)  - A요소의 내용의 뒤에 B 추가 /- B가 문서에 없으면 추가 / - 있으면 이동
+    A.appendTo(B) - B요소의 내용의 뒤에 A를 추가(이동)
+
+    A.prepend(B) - A를 B에게 추가 B의 내용의 앞에 추가
+    A.prependTo(B) - B를 A에게 추가 A의 내용의 앞에 추가
+  -->
+  <span>I have nothing more to say... </span>
+ 
+  <div id="foo">FOO! </div>
+
+  <script>
+  //$('span').appendTo('#foo');
+  // appendTo 내용이 있으면 b뒤에 추가
+  $("span").prependTo("#foo"); 
+  //prependTo 내용이 
+  </script>
+ 
+</body>
+</html>
+
