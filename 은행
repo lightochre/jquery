@@ -1,0 +1,31 @@
+
+<ul class="nst_prd_list nst_etf_item">
+	<li class="nst_prd_item -prod_etf etf">
+		<a href="" class="nst_prd_link" >
+			<div class="nst_selection">
+				<input type="radio" name="radio" id="radio01">
+				<label for="radio01" class="nst_selection_item" role="radiobox" aria-checked="false"></label>
+				<div class="etf_board_name">
+					<strong>테스트입니다 </strong>
+					<span> 테스트이름입니다.</span>
+				</div>			
+			</div>
+		</a>
+	</li>
+</ul>
+
+<script>
+$(document).ready(function () {
+		$('.nst_prd_link').click(function() {
+			if($(this).find('input[type="radio"]').is(':check') === true){
+				$(this).closest('.etf').removeClass('active');
+				$(this).find('input').prop('checked', false);
+				$(this).find('input').attr('aria-checked', false);
+			} else {
+				$(this).closest('.etf').addClass('active');
+				$(this).find('input').prop('checked', true);
+				$(this).find('input').attr('aria-checked', true);		
+			} ;
+	});
+});
+</script>
